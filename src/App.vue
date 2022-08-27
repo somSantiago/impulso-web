@@ -5,12 +5,13 @@
 </template>
 
 <script setup>
-import Layout from "./components/Layout.vue";</script>
+import Layout from './components/Layout.vue';
+</script>
 
 <style scoped>
 .fullContainer{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
