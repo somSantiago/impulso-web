@@ -6,9 +6,10 @@
         </div>
         <div class="menu">
             <ul>
-                <li> Ingresar </li>
-                <li> Colaboradores </li>
-                <li> Contacto </li>
+                <li> <router-link class="link"  to="/">Inicio</router-link> </li>
+                <li> <router-link class="link"  to="/login">Ingresar</router-link> </li>
+                <li> <router-link class="link" to="/collaborators">Colaboradores</router-link> </li>
+                <li> <router-link class="link" to="#">Contacto</router-link> </li>
             </ul>
         </div>
     </div>
@@ -54,5 +55,10 @@ li {
     font-weight: 500;
     list-style: none;
     margin: 0px 20px;
+}
+.link{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
 }
 </style>

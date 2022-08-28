@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 :root {
-  font-family: Inter,Roboto, sans-serif;
+  font-family: Inter,Roboto;
   font-size: 16px;
   line-height: 24px;
   font-weight: 200;
@@ -17,11 +17,48 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  
+    --bg-page: #1a1a1a;
+    --text-color: #f3f3f3;
+    --card-bg: #202020;
+    --icon-bg: #45423C;
+    --blue: #0870f8;
+    --blue-rgb: 8, 112, 248;
+    --orange: #FF9232;
+    --g-purple: linear-gradient(30deg, #85f, #9966ff);
+    --g-yellow: linear-gradient(30deg, #fc0, #fc0);
+    --g-red: linear-gradient(30deg, #f36, #f24);
+    --g-blue: linear-gradient(30deg, #0cf, #0af);
+    --g-purple: linear-gradient(30deg, #85f, #9966ff);
+    --range: 0%;
+    --shadow: rgba(0, 6, 39, .1);
+    --light-shadow: rgba(255, 255, 255, .8);
+    --light-shadow-2: rgba(255, 255, 255, .1);
+
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+      font-family: 'Inter var', sans-serif;
+  }
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(245, 245, 245, 0.911);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(156, 156, 156);    /* color of the scroll thumb */
+  border-radius: 2px;       /* roundness of the scroll thumb */
 }
 
 button {
@@ -34,6 +71,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  outline: none;
 }
 button:hover {
   border-color: #646cff;
